@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewContact">
+
+    <com.github.abdularis.civ.CircleImageView
+
+        android:id="@+id/contact_image_v"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_account_circle_black_24dp"
+        android:translationZ="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        />
+
+
+    <TextView
+        android:id="@+id/contact_name_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/contact_image_v"
+        android:layout_marginTop="29dp"
+        android:layout_marginLeft="5dp"
+        android:text="Name"
+        android:translationZ="1dp"
+        android:textSize="21dp"
+        android:textColor="#000"
+        android:layout_toRightOf="@+id/contact_image_v" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#eaeaea"
+        />
+    <View
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dedede"
+        android:layout_marginTop="250dp"
+        />
+
+    <TextView
+        android:id="@+id/contact_number_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="03232452884"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:textSize="16dp"
+        android:textColor="#000"
+        android:layout_marginTop="250dp"/>
+
+    <TextView
+        android:id="@+id/contact_type_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:textSize="12dp"
+        android:layout_below="@+id/contact_number_v"
+        android:text="Home"
+        android:textColor="#434343"
+        />
+
+    <View
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dedede"
+        android:layout_marginTop="305dp"
+        />
+
+
+</RelativeLayout>
